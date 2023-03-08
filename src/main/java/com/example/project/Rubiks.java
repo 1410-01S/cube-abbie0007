@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 
 
-public class Rubiks {
+public class github {
    
     static String[][] cube = {{
         "r", "r", "r",
@@ -248,14 +248,14 @@ public class Rubiks {
 
             break;
             case"cc":
-            cube[eFace.current_face][0] = copy[eFace.current_face][6];
-            cube[eFace.current_face][2] = copy[eFace.current_face][3];
-            cube[eFace.current_face][3] = copy[eFace.current_face][0];
-            cube[eFace.current_face][4] = copy[eFace.current_face][7];
-            cube[eFace.current_face][5] = copy[eFace.current_face][1];
-            cube[eFace.current_face][6] = copy[eFace.current_face][8];
-            cube[eFace.current_face][7] = copy[eFace.current_face][5];
-            cube[eFace.current_face][8] = copy[eFace.current_face][2];
+            cube[eFace.current_face][0] = copy[eFace.current_face][2];
+            cube[eFace.current_face][1] = copy[eFace.current_face][5];
+            cube[eFace.current_face][2] = copy[eFace.current_face][8];
+            cube[eFace.current_face][3] = copy[eFace.current_face][1];
+            cube[eFace.current_face][5] = copy[eFace.current_face][7];
+            cube[eFace.current_face][6] = copy[eFace.current_face][0];
+            cube[eFace.current_face][7] = copy[eFace.current_face][3];
+            cube[eFace.current_face][8] = copy[eFace.current_face][6];
 
 
             cube[eFace.edge1[0]][eFace.edge1[1]] = copy[eFace.edge2[0]][eFace.edge2[1]];
@@ -307,9 +307,7 @@ public class Rubiks {
     
     {
         
-        // for (int i = 0; i < args.length; i++) {
-        //     System.out.println(args[i]);
-        // }
+        System.out.println("Args are: u, d, r, l, f, b, u', d', r', l', f', b'");  
         
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
        
