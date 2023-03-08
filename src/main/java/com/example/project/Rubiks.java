@@ -152,50 +152,48 @@ public class Rubiks {
                 edge4[3] = 6;
                 break;
                 case 4://yellow
-                edge1[4] = 2;
-                edge1[1] = 0;
-                edge1[2] = 1;
-                edge1[3] = 2;
-               
-                edge2[4] = 3;
-                edge2[1] = 0;
-                edge2[2] = 1;
-                edge2[3] = 2;
+                edge1[0] = 1;
+                edge1[1] = 2;
+                edge1[2] = 5;
+                edge1[3] = 8;
 
+                
+                edge2[0] = 2;
+                edge2[1] = 2;
+                edge2[2] = 5;
+                edge2[3] = 8;
 
-                edge3[4] = 0;
-                edge3[1] = 2;
-                edge3[2] = 1;
-                edge3[3] = 0;
+                edge3[0] = 3;
+                edge3[1] = 0;
+                edge3[2] = 3;
+                edge3[3] = 6;
 
-
-                edge4[4] = 1;
-                edge4[1] = 0;
-                edge4[2] = 1;
-                edge4[3] = 2;
+                edge4[0] = 0;
+                edge4[1] = 2;
+                edge4[2] = 5;
+                edge4[3] = 8;
                 break;
                 case 5://white
-                edge1[5] = 2;
-                edge1[1] = 6;
-                edge1[2] = 7;
+                edge1[0] = 1;
+                edge1[1] = 2;
+                edge1[2] = 5;
                 edge1[3] = 8;
-               
-                edge2[5] = 1;
-                edge2[1] = 8;
+
+                
+                edge2[0] = 0;
+                edge2[1] = 2;
                 edge2[2] = 5;
-                edge2[3] = 2;
+                edge2[3] = 8;
 
+                edge3[0] = 3;
+                edge3[1] = 0;
+                edge3[2] = 3;
+                edge3[3] = 6;
 
-                edge3[5] = 0;
-                edge3[1] = 6;
-                edge3[2] = 7;
-                edge3[3] = 8;
-
-
-                edge4[5] = 3;
-                edge4[1] = 8;
-                edge4[2] = 7;
-                edge4[3] = 6;
+                edge4[0] = 2;
+                edge4[1] = 2;
+                edge4[2] = 5;
+                edge4[3] = 8;
                 break;
             }
         }
@@ -218,14 +216,14 @@ public class Rubiks {
 
         switch(direction){
             case"c":
-            cube[eFace.current_face][0] = copy[eFace.current_face][2];
-            cube[eFace.current_face][2] = copy[eFace.current_face][5];
-            cube[eFace.current_face][3] = copy[eFace.current_face][8];
-            cube[eFace.current_face][4] = copy[eFace.current_face][1];
-            cube[eFace.current_face][5] = copy[eFace.current_face][7];
-            cube[eFace.current_face][6] = copy[eFace.current_face][0];
-            cube[eFace.current_face][7] = copy[eFace.current_face][3];
-            cube[eFace.current_face][8] = copy[eFace.current_face][6];
+            cube[eFace.current_face][0] = copy[eFace.current_face][6];
+            cube[eFace.current_face][1] = copy[eFace.current_face][3];
+            cube[eFace.current_face][2] = copy[eFace.current_face][0];
+            cube[eFace.current_face][3] = copy[eFace.current_face][7];
+            cube[eFace.current_face][5] = copy[eFace.current_face][1];
+            cube[eFace.current_face][6] = copy[eFace.current_face][8];
+            cube[eFace.current_face][7] = copy[eFace.current_face][5];
+            cube[eFace.current_face][8] = copy[eFace.current_face][2];
 
 
             cube[eFace.edge1[0]][eFace.edge1[1]] = copy[eFace.edge4[0]][eFace.edge4[1]];
